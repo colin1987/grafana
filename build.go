@@ -274,7 +274,6 @@ func createPackage(options linuxPackageOptions) {
 		"--name", "grafana",
 		"--version", linuxPackageVersion,
 		"-p", "./dist",
-		"--deb-no-default-config-files",
 	}
 
 	if pkgArch != "" {
