@@ -1,12 +1,12 @@
 <navbar>
 
-<a class="pointer navbar-page-btn" ng-if="::!dashboardMeta.isSnapshot" ng-click="openSearch()">
+<a class="pointer navbar-page-btn nav-hide" style="display: none;" ng-if="::!dashboardMeta.isSnapshot" ng-click="openSearch()">
 	<i class="icon-gf icon-gf-dashboard"></i>
 	<span>{{dashboard.title}}</span>
 	<i class="fa fa-caret-down"></i>
 </a>
 
-<a class="pointer navbar-page-btn" ng-if="::dashboardMeta.isSnapshot" bs-tooltip="titleTooltip" data-placement="bottom" ng-click="openSearch()">
+<a class="pointer navbar-page-btn nav-hide" style="display: none;" ng-if="::dashboardMeta.isSnapshot" bs-tooltip="titleTooltip" data-placement="bottom" ng-click="openSearch()">
 	<i class="icon-gf icon-gf-snapshot"></i>
 	<span>
 		{{dashboard.title}}
@@ -26,7 +26,7 @@
 	</li>
 </ul>
 
-<ul class="nav pull-left dashnav-action-icons">
+<ul class="nav pull-left dashnav-action-icons nav-hide" style="display: none;">
 	<li ng-show="::dashboardMeta.canStar">
 		<a class="pointer" ng-click="starDashboard()">
 			<i class="fa" ng-class="{'fa-star-o': !dashboardMeta.isStarred, 'fa-star': dashboardMeta.isStarred}" style="color: orange;"></i>
