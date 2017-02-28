@@ -90,7 +90,7 @@ function(angular, _) {
           panel.scopedVars = null;
 
           // ignore span changes
-          panel.span = null;
+          // panel.span = null;
 
           // ignore panel legend sort
           if (panel.legend)  {
