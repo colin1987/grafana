@@ -90,7 +90,8 @@ module.directive('grafanaPanel', function($rootScope) {
       // set initial height
       if (!ctrl.containerHeight) {
         ctrl.calculatePanelHeight();
-        panelContainer.css({minHeight: ctrl.containerHeight});
+        panelContainer.css({height: ctrl.containerHeight});
+        panelContainer.css({minHeight: ctrl.panel.minHeight});
         lastHeight = ctrl.containerHeight;
       }
 
@@ -102,7 +103,8 @@ module.directive('grafanaPanel', function($rootScope) {
 
       ctrl.events.on('render', () => {
         if (lastHeight !== ctrl.containerHeight) {
-          panelContainer.css({minHeight: ctrl.containerHeight});
+          panelContainer.css({height: ctrl.containerHeight});
+          panelContainer.css({minHeight: ctrl.panel.minHeight});
           lastHeight = ctrl.containerHeight;
         }
 
