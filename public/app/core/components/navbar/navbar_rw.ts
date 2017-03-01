@@ -5,17 +5,17 @@ import _ from 'lodash';
 import $ from 'jquery';
 import coreModule from '../../core_module';
 
-export class NavbarRoCtrl {
+export class NavbarRwCtrl {
   /** @ngInject */
   constructor(private $scope, private contextSrv) {
   }
 }
 
-export function navbarRoDirective() {
+export function navbarRwDirective() {
   return {
     restrict: 'E',
-    templateUrl: 'public/app/core/components/navbar/navbar_ro.html',
-    controller: NavbarRoCtrl,
+    templateUrl: 'public/app/core/components/navbar/navbar_rw.html',
+    controller: NavbarRwCtrl,
     bindToController: true,
     transclude: true,
     controllerAs: 'ctrl',
@@ -31,4 +31,4 @@ export function navbarRoDirective() {
   };
 }
 
-coreModule.directive('navbarRo', navbarRoDirective);
+coreModule.directive('navbarRw', navbarRwDirective);

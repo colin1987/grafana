@@ -6,7 +6,7 @@ import angular from 'angular';
 
 import {DashboardExporter} from '../export/exporter';
 
-export class DashNavRoCtrl {
+export class DashNavRwCtrl {
 
   /** @ngInject */
   constructor($scope, $rootScope, dashboardSrv, $location, playlistSrv, backendSrv, $timeout, datasourceSrv) {
@@ -153,13 +153,13 @@ export class DashNavRoCtrl {
   }
 }
 
-export function dashNavRoDirective() {
+export function dashNavRwDirective() {
   return {
     restrict: 'E',
-    templateUrl: 'public/app/features/dashboard/dashnav/dashnav_ro.html',
-    controller: DashNavRoCtrl,
+    templateUrl: 'public/app/features/dashboard/dashnav/dashnav_rw.html',
+    controller: DashNavRwCtrl,
     transclude: true,
   };
 }
 
-angular.module('grafana.directives').directive('dashnavRo', dashNavRoDirective);
+angular.module('grafana.directives').directive('dashnavRw', dashNavRwDirective);

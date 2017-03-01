@@ -28,8 +28,8 @@ function setupAngularRoutes($routeProvider, $locationProvider) {
     reloadOnSearch: false,
     pageClass: 'page-dashboard',
   })
-  .when('/dashboard-ro/:type/:slug', {
-    templateUrl: 'public/app/partials/dashboard_ro.html',
+  .when('/dashboard-rw/:type/:slug', {
+    templateUrl: 'public/app/partials/dashboard_rw.html',
     controller : 'LoadDashboardCtrl',
     reloadOnSearch: false,
     pageClass: 'page-dashboard',

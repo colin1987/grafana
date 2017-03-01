@@ -26,7 +26,7 @@ import {searchDirective} from './components/search/search';
 import {infoPopover} from './components/info_popover';
 import {colorPicker} from './components/colorpicker';
 import {navbarDirective} from './components/navbar/navbar';
-import {navbarRoDirective} from './components/navbar/navbar_ro';
+import {navbarRwDirective} from './components/navbar/navbar_rw';
 
 import {arrayJoin} from './directives/array_join';
 import {liveSrv} from './live/live_srv';
@@ -55,7 +55,7 @@ export {
   grafanaAppDirective,
   sideMenuDirective,
   navbarDirective,
-  navbarRoDirective,
+  navbarRwDirective,
   searchDirective,
   colorPicker,
   liveSrv,
