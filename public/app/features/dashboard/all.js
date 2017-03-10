@@ -3,6 +3,7 @@ define([
   './alerting_srv',
   './dashboardLoaderSrv',
   './dashnav/dashnav',
+  './dashnav/dashnav_ro',
   './submenu/submenu',
   './saveDashboardAsCtrl',
   './shareModalCtrl',
