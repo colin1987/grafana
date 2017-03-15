@@ -1,0 +1,7 @@
+body.page-blue, [ng-cloak] {
+    background-color: #10214d;
+}
+
+.page-blue .graph-legend-table .graph-legend-series:nth-child(odd) {
+    background-color: #1a7f3e
+}

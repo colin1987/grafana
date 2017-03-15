@@ -38,7 +38,7 @@ function setupAngularRoutes($routeProvider, $locationProvider) {
     templateUrl: 'public/app/partials/dashboard_embed.html',
     controller : 'LoadDashboardCtrl',
     reloadOnSearch: false,
-    pageClass: 'page-dashboard',
+    pageClass: 'page-dashboard page-blue',
   })
   .when('/dashboard-solo/:type/:slug', {
     templateUrl: 'public/app/features/panel/partials/soloPanel.html',
