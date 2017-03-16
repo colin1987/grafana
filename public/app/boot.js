@@ -8,7 +8,7 @@
       return address + System.cacheBust;
     });
   };
-  System.cacheBust = '?bust=' + Date.now();
+  System.cacheBust = '?bust=' + '4.1.1';
 
   System.import('app/app').then(function(app) {
     app.default.init();
