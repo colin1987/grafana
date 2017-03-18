@@ -2,11 +2,7 @@ body {
     background-color: transparent;
 }
 
-.page-trans .panel-container {
-    background-color: transparent;
-}
-
-.page-blue * {
+.page-custom * {
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: -moz-none;
@@ -14,9 +10,29 @@ body {
     user-select: none;
 }
 
-.panel-title-container {
+.page-custom .panel-title-container {
     pointer-events: none;
     cursor: default;
+}
+
+.page-custom .panel-hover-highlight {
+    box-shadow: none;
+}
+
+.page-custom .alert-warning.alert {
+    background: grey;
+}
+
+.page-custom .graph-tooltip {
+    background-color: #7b531a;
+}
+
+.page-custom .graph-legend-table .graph-legend-series:nth-child(odd) {
+    background-color: #1a7f3e;
+}
+
+.page-custom .footer {
+    display: none;
 }
 
 body.page-blue {
@@ -28,24 +44,8 @@ body.page-blue {
     border: none;
 }
 
-.panel-hover-highlight {
-    box-shadow: none;
-}
-
-.page-blue .alert-warning.alert {
-    background: grey;
-}
-
-.page-blue .graph-tooltip {
-    background-color: #7b531a;
-}
-
-.page-blue .graph-legend-table .graph-legend-series:nth-child(odd) {
-    background-color: #1a7f3e;
-}
-
-.page-blue .footer {
-    display: none;
+.page-trans .panel-container {
+    background-color: transparent;
 }
 
 .page-blue .card-item {
@@ -60,6 +60,10 @@ body.page-blue {
     border-bottom: .2rem solid #0d2667;
 }
 
+.page-trans .card-item {
+    background: #0e1d42;
+}
+
 .page-trans .card-item:hover {
     background: #0e1d42;
 }
@@ -67,3 +71,4 @@ body.page-blue {
 .page-trans .card-list-layout-list .card-item {
     border-bottom: .2rem solid #0d2667;
 }
+

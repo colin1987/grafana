@@ -34,17 +34,17 @@ function setupAngularRoutes($routeProvider, $locationProvider) {
     reloadOnSearch: false,
     pageClass: 'page-dashboard',
   })
-  .when('/dashboard-embed/:type/:slug', {
+  .when('/dashboard-blue/:type/:slug', {
     templateUrl: 'public/app/partials/dashboard_embed.html',
     controller : 'LoadDashboardCtrl',
     reloadOnSearch: false,
-    pageClass: 'page-dashboard page-blue',
+    pageClass: 'page-dashboard page-custom page-blue',
   })
   .when('/dashboard-trans/:type/:slug', {
     templateUrl: 'public/app/partials/dashboard_embed.html',
     controller : 'LoadDashboardCtrl',
     reloadOnSearch: false,
-    pageClass: 'page-dashboard page-blue page-trans',
+    pageClass: 'page-dashboard page-custom page-trans',
   })
   .when('/dashboard-solo/:type/:slug', {
     templateUrl: 'public/app/features/panel/partials/soloPanel.html',
