@@ -19,6 +19,10 @@ body {
     cursor: default;
 }
 
+body.page-blue {
+    background-color: #10214d;
+}
+
 .page-blue .panel-container {
     background-color: #10214d;
     border: none;
@@ -45,14 +49,21 @@ body {
 }
 
 .page-blue .card-item {
-    background: #0e1d42;
+    background: #1b357a;
 }
 
 .page-blue .card-item:hover {
-    background: #0e1d42;
+    background: #1b357a;
 }
 
 .page-blue .card-list-layout-list .card-item {
     border-bottom: .2rem solid #0d2667;
 }
 
+.page-trans .card-item:hover {
+    background: #0e1d42;
+}
+
+.page-trans .card-list-layout-list .card-item {
+    border-bottom: .2rem solid #0d2667;
+}
