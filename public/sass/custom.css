@@ -1,5 +1,9 @@
 body {
-    background-color: #10214d;
+    background-color: transparent;
+}
+
+.page-trans .panel-container {
+    background-color: transparent;
 }
 
 .page-blue * {
@@ -18,6 +22,10 @@ body {
 .page-blue .panel-container {
     background-color: #10214d;
     border: none;
+}
+
+.panel-hover-highlight {
+    box-shadow: none;
 }
 
 .page-blue .alert-warning.alert {
@@ -48,10 +56,3 @@ body {
     border-bottom: .2rem solid #0d2667;
 }
 
-body.page-trans {
-    background-color: transparent;
-}
-
-.page-trans .panel-container {
-    background-color: transparent;
-}
