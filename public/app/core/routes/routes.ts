@@ -40,6 +40,12 @@ function setupAngularRoutes($routeProvider, $locationProvider) {
     reloadOnSearch: false,
     pageClass: 'page-dashboard page-blue',
   })
+  .when('/dashboard-trans/:type/:slug', {
+    templateUrl: 'public/app/partials/dashboard_embed.html',
+    controller : 'LoadDashboardCtrl',
+    reloadOnSearch: false,
+    pageClass: 'page-dashboard page-blue page-trans',
+  })
   .when('/dashboard-solo/:type/:slug', {
     templateUrl: 'public/app/features/panel/partials/soloPanel.html',
     controller : 'SoloPanelCtrl',
