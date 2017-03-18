@@ -35,10 +35,6 @@ body {
     display: none;
 }
 
-body.page-blue {
-    background-color: #10214d;
-}
-
 .page-blue .panel-container {
     background-color: #10214d;
     border: none;
