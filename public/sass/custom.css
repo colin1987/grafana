@@ -15,6 +15,14 @@ body {
     cursor: default;
 }
 
+.page-custom .panel-loading {
+    display:none;
+}
+
+.page-custom .panel-container {
+    border:none;
+}
+
 .page-custom .panel-hover-highlight {
     box-shadow: none;
 }
@@ -37,7 +45,6 @@ body {
 
 .page-blue .panel-container {
     background-color: #10214d;
-    border: none;
 }
 
 .page-trans .panel-container {
