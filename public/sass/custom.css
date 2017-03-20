@@ -36,7 +36,7 @@ body {
 }
 
 .page-custom .graph-legend-table .graph-legend-series:nth-child(odd) {
-    background-color: #1a7f3e;
+    background-color: transparent;
 }
 
 .page-custom .footer {
