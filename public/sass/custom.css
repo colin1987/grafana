@@ -43,6 +43,10 @@ body {
     display: none;
 }
 
+.page-custom .graph-legend-value::before {
+    content: "";
+}
+
 .page-blue .panel-container {
     background-color: #10214d;
 }
